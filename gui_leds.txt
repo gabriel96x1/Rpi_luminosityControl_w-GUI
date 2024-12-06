@@ -56,30 +56,30 @@ def Led1plus20():
     global L1
     if pwm1>=60:
         pwm1=60
-        
+
     else:
         pwm1=pwm1+1
         raiz.after_cancel(raiz.after(1000, PWM1))
         if (pwm1>60):
             pwm1=60
-    
+
     Led1LabelConfig()
     PWM1()
     print lab1
     print pwm1
-    
+
 def Led1plus100():
     global pwm1
     global L1
-    if pwm1>=60:     
-        pwm1=60      
-        
-    else:       
+    if pwm1>=60:
+        pwm1=60
+
+    else:
         pwm1=pwm1+5
         raiz.after_cancel(raiz.after(1000, PWM1))
         if (pwm1>60):
             pwm1=60
-    
+
     Led1LabelConfig()
     PWM1()
     print lab1
@@ -91,11 +91,11 @@ def Led1minus20():
         pwm1=0
         raiz.after_cancel(raiz.after(1000, PWM1))
 
-    else:    
+    else:
         pwm1=pwm1-1
         if (pwm1<0):
             pwm1=0
-    
+
     Led1LabelConfig()
     PWM1()
     print lab1
@@ -109,46 +109,46 @@ def Led1minus100():
         raiz.after_cancel(raiz.after(1000, PWM1))
 
     else:
-        
+
         pwm1=pwm1-5
         if (pwm1<0):
             pwm1=0
-   
+
     Led1LabelConfig()
     PWM1()
-    
+
 #empieza botones de configuracion canal 2
-    
+
 def Led2plus20():
     global pwm2
     global L2
-    if pwm2>=60:     
-        pwm2=60      
-        
-    else:       
+    if pwm2>=60:
+        pwm2=60
+
+    else:
         pwm2=pwm2+1
         raiz.after_cancel(raiz.after(1000, PWM2))
         if (pwm2>60):
             pwm2=60
-    
+
     Led2LabelConfig()
     PWM2()
-    
+
 def Led2plus100():
     global pwm2
     global L2
-    if pwm2>=60:     
-        pwm2=60      
-        
-    else:       
+    if pwm2>=60:
+        pwm2=60
+
+    else:
         pwm2=pwm2+5
         raiz.after_cancel(raiz.after(1000, PWM2))
         if (pwm2>60):
             pwm2=60
-    
+
     Led2LabelConfig()
     PWM2()
-    
+
 def Led2minus20():
     global pwm2
     global L2
@@ -156,11 +156,11 @@ def Led2minus20():
         pwm2=0
         raiz.after_cancel(raiz.after(1000, PWM2))
 
-    else:    
+    else:
         pwm2=pwm2-1
         if (pwm2<0):
             pwm2=0
-   
+
     Led2LabelConfig()
     PWM2()
 
@@ -172,11 +172,11 @@ def Led2minus100():
         raiz.after_cancel(raiz.after(1000, PWM2))
 
     else:
-        
+
         pwm2=pwm2-5
         if (pwm2<0):
             pwm2=0
-    
+
     Led2LabelConfig()
     PWM2()
 
@@ -185,33 +185,33 @@ def Led2minus100():
 def Led3plus20():
     global pwm3
     global L3
-    if pwm3>=60:     
-        pwm3=60      
-        
-    else:       
+    if pwm3>=60:
+        pwm3=60
+
+    else:
         pwm3=pwm3+1
         raiz.after_cancel(raiz.after(1000, PWM3))
         if (pwm3>60):
             pwm3=60
-    
+
     Led3LabelConfig()
     PWM3()
-    
+
 def Led3plus100():
     global pwm3
     global L3
-    if pwm3>=60:     
-        pwm3=60      
-        
-    else:       
+    if pwm3>=60:
+        pwm3=60
+
+    else:
         pwm3=pwm3+5
         raiz.after_cancel(raiz.after(1000, PWM3))
         if (pwm3>60):
             pwm3=60
-    
+
     Led3LabelConfig()
     PWM3()
-    
+
 def Led3minus20():
     global pwm3
     global L3
@@ -219,11 +219,11 @@ def Led3minus20():
         pwm3=0
         raiz.after_cancel(raiz.after(1000, PWM3))
 
-    else:    
+    else:
         pwm3=pwm3-1
         if (pwm3<0):
             pwm3=0
-    
+
     Led3LabelConfig()
     PWM3()
 
@@ -235,11 +235,11 @@ def Led3minus100():
         raiz.after_cancel(raiz.after(1000, PWM3))
 
     else:
-        
+
         pwm3=pwm3-5
         if (pwm3<0):
             pwm3=0
-    
+
     Led3LabelConfig()
     PWM3()
 
@@ -248,33 +248,33 @@ def Led3minus100():
 def Led4plus20():
     global pwm4
     global L4
-    if pwm4>=60:     
-        pwm4=60      
-        
-    else:       
+    if pwm4>=60:
+        pwm4=60
+
+    else:
         pwm4=pwm4+1
         raiz.after_cancel(raiz.after(1000, PWM4))
         if (pwm4>60):
             pwm4=60
-    
+
     Led4LabelConfig()
     PWM4()
-    
+
 def Led4plus100():
     global pwm4
     global L4
-    if pwm4>=60:     
-        pwm4=60      
-        
-    else:       
+    if pwm4>=60:
+        pwm4=60
+
+    else:
         pwm4=pwm4+5
         raiz.after_cancel(raiz.after(1000, PWM4))
         if (pwm4>60):
             pwm4=60
-    
+
     Led4LabelConfig()
     PWM4()
-    
+
 def Led4minus20():
     global pwm4
     global L4
@@ -282,11 +282,11 @@ def Led4minus20():
         pwm4=0
         raiz.after_cancel(raiz.after(1000, PWM4))
 
-    else:    
+    else:
         pwm4=pwm4-1
         if (pwm4<0):
             pwm4=0
-    
+
     Led4LabelConfig()
     PWM4()
 
@@ -298,19 +298,19 @@ def Led4minus100():
         raiz.after_cancel(raiz.after(1000, PWM4))
 
     else:
-        
+
         pwm4=pwm4-5
         if (pwm4<0):
             pwm4=0
     Led4LabelConfig()
     PWM4()
-#Configuración para mostrar el dato de PWM como corriente 
+#Configuración para mostrar el dato de PWM como corriente
 def Led1LabelConfig():
     global lab1
     muestra1=pwm1*20
     lab1 =muestra1,"mA"
     ledLabel1.configure(text=lab1)
-    
+
 def Led2LabelConfig():
     global lab2
     muestra2=pwm2*20
@@ -349,7 +349,7 @@ def PWM1():
         else:
             s1=s-seg1+59
             ma1=1
-                    
+
         if m>=min1:
             m1=m-min1-ma1
             ha1=0
@@ -391,7 +391,7 @@ def PWM2():
         else:
             s2=s-seg2+59
             ma2=1
-                    
+
         if m>=min2:
             m2=m-min2-ma2
             ha2=0
@@ -433,7 +433,7 @@ def PWM3():
         else:
             s3=s-seg3+59
             ma3=1
-                    
+
         if m>=min3:
             m3=m-min3-ma3
             ha3=0
@@ -475,7 +475,7 @@ def PWM4():
         else:
             s4=s-seg4+59
             ma4=1
-                    
+
         if m>=min4:
             m4=m-min4-ma4
             ha4=0
@@ -496,7 +496,7 @@ def PWM4():
         s=0
     cont4 ="  ",h4,"hr",m4,"min"
     contador4.configure(text=cont4)
-    
+
 def actualizar1():
     global h1
     global m1
@@ -517,7 +517,7 @@ def actualizar1():
     wiringpi.softPwmWrite(L1,pwm1)
     PWM1()
     config.destroy()
-    
+
 def actualizar2():
     global h2
     global m2
@@ -538,8 +538,8 @@ def actualizar2():
     wiringpi.softPwmWrite(L2,pwm2)
     PWM2()
     config.destroy()
-    
-    
+
+
 def actualizar3():
     global h3
     global m3
@@ -560,7 +560,7 @@ def actualizar3():
     wiringpi.softPwmWrite(L3,pwm3)
     PWM3()
     config.destroy()
-    
+
 def actualizar4():
     global h4
     global m4
@@ -581,7 +581,7 @@ def actualizar4():
     wiringpi.softPwmWrite(L4,pwm4)
     PWM4()
     config.destroy()
- #funciones de reestablecimiento de salidas a 0   
+ #funciones de reestablecimiento de salidas a 0
 def rest1():
     global h1
     global m1
@@ -669,7 +669,7 @@ def rest4():
     wiringpi.softPwmWrite(L4,pwm4)
     PWM4()
     Led4LabelConfig()
-#declaración de funciones de cancelar los ultimos cambios hechos    
+#declaración de funciones de cancelar los ultimos cambios hechos
 def cancelar1():
     global pwm1
     global pre1
@@ -708,7 +708,7 @@ def cancelar4():
 
 def pruebas():
         pass
-#interfaz de control para cada canal 
+#interfaz de control para cada canal
 def canal1():
     global lab1
     global pwm1
@@ -718,7 +718,7 @@ def canal1():
     config = Toplevel()
     config.geometry('250x480')
     config.title("CANAL 1")
-    
+
     enter=Button(config, text="ACTUALIZAR", command=actualizar1)
     enter.grid(row=5, column=1)
     cancel=Button(config, text="CANCELAR", command=cancelar1)
@@ -744,7 +744,7 @@ def canal2():
     config = Toplevel()
     config.geometry('250x480')
     config.title("CANAL 2")
-    
+
     enter=Button(config, text="ACTUALIZAR", command=actualizar2)
     enter.grid(row=5, column=1)
     cancel=Button(config, text="CANCELAR", command=cancelar2)
@@ -771,7 +771,7 @@ def canal3():
     posx_y = 2
     config.geometry('250x480')
     config.title("CANAL 3")
-    
+
     enter=Button(config, text="ACTUALIZAR", command=actualizar3)
     enter.grid(row=5, column=1)
     cancel=Button(config, text="CANCELAR", command=cancelar3)
@@ -797,7 +797,7 @@ def canal4():
     config = Toplevel()
     config.geometry('250x480')
     config.title("CANAL 4")
-    
+
     enter=Button(config, text="ACTUALIZAR", command=actualizar4)
     enter.grid(row=5, column=1)
     cancel=Button(config, text="CANCELAR", command=cancelar4)
@@ -863,4 +863,3 @@ canal4Button = Button(raiz, text="Restablecer", command=rest4)
 canal4Button.grid(row=4, column=4)
 
 raiz.mainloop()
-
